@@ -9,11 +9,11 @@
     "modules-left": [
         "hyprland/workspaces"
     ],
-    "modules-center": [
+    //"modules-center": [
         //"custom/media"
         //https://github.com/jvc84/musikcube-waves
-        "custom/waves"
-    ],
+        //"custom/waves"
+    //],
     "modules-right": [
         "pulseaudio",
         "network",
@@ -21,9 +21,9 @@
         "cpu",
         "memory",
         "temperature",
-	"custum/diskfree",
+	"custom/diskfree",
         "keyboard-state",
-        "hyprland/language",
+        "custom/language",
         "clock"
     ],
     // Modules configuration 
@@ -47,7 +47,12 @@
         "format": "{}",
         "exec": "/sbin/python3 /home/pavel/.local/share/musikcube-waves/run_musikcube_animation.py"
     },
-    "keyboard-state": {
+    "custom/language": {
+        "format": "{}",
+        "exec": "/sbin/python3 /home/pavel/.local/bin/get_kb_layout.py",
+	"interval": 1
+    },
+    "keyboard-state": { //the user has to be in the input group
         "numlock": true,
         "capslock": true,
         "format": "{name} {icon}",
@@ -123,9 +128,7 @@
 	    "exec": "df --total -hl | grep 'nvme0n1p3' | awk '{print $5}'"
     },
    "hyprland/language": {
-        //"format": "{} {variant}",
-        //"format": "{}",
-        "format": "blabla",
+        "format": "{} {variant}",
         "tooltip-format": "{long}",
         //"on-click": "hyprctl switchxkblayout at-translated-set-2-keyboard next",
         "format-en": "EN",
