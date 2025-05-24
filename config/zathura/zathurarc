@@ -1,0 +1,2 @@
+#open in okular for highlighting
+map h exec "/home/pavel/.local/bin/open_in_okular.sh '$FILE' '$PAGE'"
