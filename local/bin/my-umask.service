@@ -1,0 +1,10 @@
+# Change the umask of selected directories and files
+# Copy this file to ~/.config/systemd/user/
+
+[Unit]
+Description=Run my-umask.sh script
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/bin/bash /home/pavel/.local/bin/my-umask.sh
