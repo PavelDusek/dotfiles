@@ -9,11 +9,12 @@ layout {
     tab name="rust" cwd="/home/pavel/Documents/" {
         pane
         pane //cwd="/home/pavel/Documents/rook/"
-        //pane command="htop"
     }
     tab name="python" cwd="/home/pavel/Documents/" {
         pane
-        pane //cwd="/home/pavel/Documents/rook/"
-        //pane command="htop"
+        pane //cwd="/home/pavel/Documents/some-python-subdirectory/"
+    }
+    tab name="btm" cwd="/home/pavel/" {
+        pane command="btm"
     }
 }
