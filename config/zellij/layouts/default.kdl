@@ -1,20 +1,76 @@
 layout {
     tab name="fish" cwd="/home/pavel/" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
         pane
+
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
     }
+
+
+
     tab name="vim" cwd="/home/pavel/vimwiki/" {
-        pane
-        pane
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+
+        pane split_direction="vertical" {
+            pane
+            pane
+        }
+
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
     }
+
+
+
     tab name="rust" cwd="/home/pavel/Documents/" {
-        pane
-        pane //cwd="/home/pavel/Documents/rook/"
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+
+        pane split_direction="vertical" {
+            pane
+            pane //cwd="/home/pavel/Documents/rook/"
+        }
+
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
     }
+
+
+
+
     tab name="python" cwd="/home/pavel/Documents/" {
-        pane
-        pane //cwd="/home/pavel/Documents/some-python-subdirectory/"
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+
+        pane split_direction="vertical" {
+            pane
+            pane //cwd="/home/pavel/Documents/some-python-subdirectory/"
+        }
+
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
     }
+
     tab name="btm" cwd="/home/pavel/" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+
         pane command="btm"
+
+        pane size=2 borderless=true {
+            plugin location="zellij:status-bar"
+        }
     }
 }
