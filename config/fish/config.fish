@@ -9,8 +9,4 @@ if status is-login
     end
 end
 
-alias llth='ls -lt | head'
-alias limg='ls -t | head -n 1 | xargs gwenview'
-alias weather='curl wttr.in/Praha'
-
 export WEBKIT_DISABLE_DMABUF_RENDERER=1
