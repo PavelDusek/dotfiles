@@ -345,3 +345,8 @@ label:focus {
     background-color: #0069d4;
 }
 
+#custom-diskfree {
+    background-color: #0069d4;
+    min-width: 100px;
+    margin: 0px;
+}
