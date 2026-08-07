@@ -100,7 +100,8 @@ button:hover {
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    /* margin: 0 4px; */
+    margin: 0;
 }
 
 /* If workspaces is the leftmost module, omit left margin */
@@ -277,15 +278,23 @@ label:focus {
     background: #00b093;
     color: #740864;
     padding: 0 5px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
     min-width: 16px;
+}
+
+#custom-language {
+    background: #00b093;
+    color: #740864;
+    padding: 0 5px;
+    /* margin: 0 5px; */
+    min-width: 110px;
 }
 
 #keyboard-state {
     background: #97e1ad;
     color: #000000;
     padding: 0 0px;
-    margin: 0 5px;
+    /* margin: 0 5px; */
     min-width: 16px;
 }
 
